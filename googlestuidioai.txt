@@ -7,7 +7,7 @@ import {Content, GoogleGenAI, Modality} from '@google/genai';
 import {LoaderCircle, SendHorizontal, Trash2, X} from 'lucide-react';
 import {useEffect, useRef, useState} from 'react';
 
-const ai = new GoogleGenAI({apiKey: process.env.AIzaSyDrJwvXX6Y0DYDBaf6mzKFlhJ42Q9j_Xas});
+const ai = new GoogleGenAI({apiKey: process.env.});
 
 function parseError(error: string) {
   const regex = /{"error":(.*)}/gm;
@@ -477,3 +477,4 @@ export default function Home() {
     </>
   );
 }
+
